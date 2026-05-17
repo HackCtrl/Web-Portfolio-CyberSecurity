@@ -1,36 +1,94 @@
 ---
-layout: archive
-title: "Publications"
+layout: single
+title: "Обо мне"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<section class="about-hero">
+	<h2>Junior специалист по информационной безопасности</h2>
+	<p class="about-lead">Я — увлеченный IT-специалист, который постоянно учится и усиливает практику. Учусь на 3 курсе по специальности «Обеспечение ИБ автоматизированных систем» и параллельно работаю техническим специалистом в IT-отделе, чтобы закреплять знания на реальных задачах.</p>
+	<div class="about-pills">
+		<span class="about-pill">Студент 3 курса</span>
+		<span class="about-pill">Технический специалист IT</span>
+		<span class="about-pill">Фокус: надежность и безопасность</span>
+	</div>
+</section>
 
-{% include base_path %}
+<section class="about-section">
+	<h2>Чем полезен команде</h2>
+	<ul class="about-list">
+		<li><strong>Системность:</strong> быстро выделяю риски и приоритеты, превращаю их в понятные задачи.</li>
+		<li><strong>Исполнительность:</strong> беру задачу полностью и довожу до результата.</li>
+		<li><strong>Обучаемость:</strong> быстро осваиваю новое и сразу применяю в работе.</li>
+		<li><strong>Прагматичность:</strong> предлагаю решения, которые реально работают и масштабируются.</li>
+	</ul>
+</section>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<section class="about-section">
+	<h2>Направления развития</h2>
+	<div class="about-grid">
+		<div class="about-card">
+			<div class="about-card__label">Информационная безопасность</div>
+			<div class="about-card__value">Практики защиты и профилактики рисков</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Надежность инфраструктуры</div>
+			<div class="about-card__value">Устойчивость сервисов и отказоустойчивость</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Контроль доступа</div>
+			<div class="about-card__value">Безопасные настройки и управление правами</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Документация</div>
+			<div class="about-card__value">Прозрачность решений и воспроизводимость процессов</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-section">
+	<h2>Профиль</h2>
+	<div class="about-grid">
+		<div class="about-card">
+			<div class="about-card__label">Дата рождения</div>
+			<div class="about-card__value">08.06.2007</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Пол</div>
+			<div class="about-card__value">Мужской</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Возраст</div>
+			<div class="about-card__value">18 лет</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Национальность</div>
+			<div class="about-card__value">Русский</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Специальность</div>
+			<div class="about-card__value">10.02.05 ОБИАС</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Адрес</div>
+			<div class="about-card__value">Москва</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Телефон</div>
+			<div class="about-card__value">+7 (980) 874-79-04</div>
+		</div>
+		<div class="about-card">
+			<div class="about-card__label">Почта</div>
+			<div class="about-card__value"><a href="mailto:kirill.ivanov08061@gmail.com">kirill.ivanov08061@gmail.com</a></div>
+		</div>
+	</div>
+</section>
+
+<section class="about-section">
+	<h2>Готов обсудить</h2>
+	<p>Если вам нужен молодой специалист, который умеет учиться, аккуратно выполнять задачи и расти вместе с командой — буду рад обсудить сотрудничество. В проектах показываю практические результаты.</p>
+</section>
 
 
 

@@ -1,12 +1,146 @@
 ---
-layout: archive
-title: "Teaching"
+layout: single
+title: "Проекты"
 permalink: /teaching/
 author_profile: true
 ---
+<section class="about-hero">
+  <p class="about-kicker">Проект</p>
+  <h2>CyberWhale Universe — экосистема практического обучения кибербезопасности</h2>
+  <p class="about-lead">MVP в разработке. Фокус — реальная практика, проверяемые навыки и результат, а не формальные сертификаты.</p>
+  <div class="about-pills">
+    <span class="about-pill">Автор концепции</span>
+    <span class="about-pill">Архитектор и разработчик MVP</span>
+    <span class="about-pill">Активная разработка</span>
+  </div>
+</section>
 
-{% include base_path %}
+<section class="about-section">
+  <h2>Роль и статус</h2>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card__label">Роль</div>
+      <div class="about-card__value">Автор концепции, архитектор и разработчик MVP</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">Статус</div>
+      <div class="about-card__value">Активная разработка</div>
+      <div class="about-card__meta">Реализованы foundation, CTF-модуль, админ-панель и publish flow</div>
+    </div>
+  </div>
+</section>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<section class="about-section">
+  <h2>Видение</h2>
+  <p>Создать end-to-end платформу, где человек проходит путь: <strong>обучение → практика на реалистичных стендах → подтверждение навыков → готовность к работе</strong>.</p>
+</section>
+
+<section class="about-section">
+  <h2>Проблема рынка, которую решает проект</h2>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card__label">Новички в ИБ</div>
+      <div class="about-card__value">Нет понятного маршрута «с нуля до junior»</div>
+      <div class="about-card__meta">Разрозненные курсы не дают цельной траектории</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">Практикующие</div>
+      <div class="about-card__value">Нет безопасных полигонов для практики</div>
+      <div class="about-card__meta">Нужны реалистичные стенды без риска для продакшна</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">Бизнес</div>
+      <div class="about-card__value">Дефицит специалистов с реальными навыками</div>
+      <div class="about-card__meta">Сертификаты без практики не закрывают риск</div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <h2>Архитектура платформы (4 модуля)</h2>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card__label">Learning</div>
+      <div class="about-card__value">Обучающие пути и лаборатории</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">CTF / Raids</div>
+      <div class="about-card__value">Практические кейсы на Docker-стендах</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">Skill Passport</div>
+      <div class="about-card__value">Фиксация подтвержденных навыков</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">AI Assistant</div>
+      <div class="about-card__value">Автоматизация обучения и практики</div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <h2>Что уже реализовано в MVP</h2>
+  <ul class="about-bullets">
+    <li>Архитектурный foundation: frontend shell + backend API + Docker.</li>
+    <li>Админ-панель управления CTF-кейсами.</li>
+    <li>Полный publish flow: Admin → API → Public CTF.</li>
+    <li>Подключение лабораторных стендов через GitHub Releases.</li>
+    <li>Первые Web-кейсы с изолированными стендами.</li>
+    <li>Логика отображения кейсов, подсказок и загрузки стендов.</li>
+    <li>Структура Learning Paths, связанная с CTF.</li>
+  </ul>
+</section>
+
+<section class="about-section">
+  <h2>Технологический стек</h2>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card__label">Frontend</div>
+      <div class="about-card__value">React, TypeScript, модульные страницы</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">Backend</div>
+      <div class="about-card__value">Node.js, API-модули, масштабирование</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">Инфраструктура</div>
+      <div class="about-card__value">Docker, docker-compose, GitHub Releases</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">База данных</div>
+      <div class="about-card__value">PostgreSQL (подключение подготовлено)</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">Cloud</div>
+      <div class="about-card__value">Готовность под Yandex Cloud</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card__label">AI</div>
+      <div class="about-card__value">Планируемая интеграция GigaChat / ML</div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <h2>Ключевая инженерная идея</h2>
+  <p>Не просто «курсы», а связка: <strong>теория → практика на уязвимом стенде → закрепление навыка → фиксация в профиле</strong>. Каждый кейс — это разворачиваемая лаборатория.</p>
+</section>
+
+<section class="about-section">
+  <h2>Дорожная карта</h2>
+  <ul class="about-bullets">
+    <li><strong>MVP:</strong> Learning + CTF + Admin + стенды.</li>
+    <li><strong>Расширение:</strong> Skill Passport + карьерный модуль.</li>
+    <li><strong>B2B-направление:</strong> корпоративные полигоны (WhaleGuard).</li>
+  </ul>
+</section>
+
+<section class="about-section">
+  <h2>Ценность проекта</h2>
+  <ul class="about-bullets">
+    <li>Практика вместо теории.</li>
+    <li>Реальные навыки вместо сертификатов.</li>
+    <li>Автоматизация обучения через платформу.</li>
+    <li>Подход «учись, ломай, фиксируй навык».</li>
+  </ul>
+</section>

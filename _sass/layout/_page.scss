@@ -34,6 +34,14 @@
   }
 }
 
+.page.resume-page {
+  @include breakpoint($large) {
+    @include span(10.5 of 12 last);
+    @include prefix(1 of 12);
+    @include suffix(1 of 12);
+  }
+}
+
 .page__title {
   margin-top: 0;
   line-height: 1;
@@ -105,6 +113,145 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+}
+
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+
+.about-hero {
+  margin: 0 0 2rem;
+}
+
+.about-kicker {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+.about-lead {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.about-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.about-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  background: var(--global-bg-color);
+  font-size: 0.9rem;
+}
+
+.about-section {
+  margin: 2rem 0;
+}
+
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.about-list li:last-child {
+  border-bottom: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.resume-page .about-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-card {
+  border: 1px solid var(--global-border-color);
+  border-radius: 14px;
+  padding: 1rem;
+  background: var(--global-bg-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.about-card .about-card {
+  margin-top: 0.75rem;
+}
+
+.about-card__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.4rem;
+}
+
+.about-card__value {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.about-card__meta {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.about-bullets {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.about-bullets li {
+  margin: 0.35rem 0;
+}
+
+/* ==========================================================================
+   CERTIFICATES
+   ========================================================================== */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  margin: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 14px;
+  padding: 0.75rem;
+  background: var(--global-bg-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.cert-card figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .page__hero {
